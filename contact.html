@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/87bccf1acd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="headerContent wrapper">
+            <div class="contentContainer">
+                <h1>GET IN TOUCH</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="contact">
+        <div class="wrapper">
+            <div class="info">
+                <div class="socialWrapper">
+                    <div class="socialIcons">
+                        <a href="">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Instagram</span>
+                        </a>
+                  
+                        <a href="">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Link to facebook</span>
+                        </a>
+                  
+                        <a href="">
+                            <i class="fab fa-snapchat-ghost" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Snapchat</span>
+                        </a>
+                  
+                        <a href="">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Link to twitter</span>
+                        </a>
+                    </div>
+    
+                    <div class="socialTxt">
+                        <p>info@email.com</p>
+                        <pre>
+                            123 - 456- 7890
+                            123 Queen Street West, Unit 10
+                            Toronto, Ontario
+                            M5V2D5
+                        </pre>
+                    </div>
+                </div><!-- END .socialWrapper -->
+
+                <form action="https://formspree.io/f/xjvlggjg" method="POST" class="commentForm" name="commentForm">
+                    <div class="commentInputs">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+    
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" id="name" placeholder="Email address">
+                    </div>
+    
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+    
+                    <button>Submit</button>
+    
+                </form>
+            </div><!-- END .info -->
+
+        </div><!-- END .wrapper -->
+
+    </main><!-- END section .contact -->
+
+</body>
+</html>
