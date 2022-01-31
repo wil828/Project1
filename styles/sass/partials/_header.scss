@@ -1,3 +1,62 @@
-h1 {
-    color: blue;
+header {
+    background-image: url("../the-restaurant-mall-assets/the-restaurant-mall-assets/home-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                padding: 40px 15px;
+                &:hover {
+                    text-decoration: underline 2px;
+                    text-decoration-color: $primary;
+                    text-underline-position: under;
+                    text-underline-offset: 4px;
+                }
+                &:focus {
+                    text-decoration: underline;
+                    text-decoration-color: $primary;
+                }
+            }
+        }
+    }
+
+    .contentContainer {
+
+        h1 {
+            display: inline-block;
+            padding: 10px;
+            vertical-align: middle;
+        }
+        span {
+            display: block;
+            color: black;
+            padding: 10px;
+            background-color: $solidWhite;
+            
+
+
+        }
+    }
+
+    .headerImg {
+        width: 50vw;
+        height: 50vh;
+        .wrapper {
+
+            .imgContainer {
+                width: 50vw;
+
+
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
 }

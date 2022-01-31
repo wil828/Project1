@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Josefin+Sans&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -203,15 +203,6 @@ template {
   display: none;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: "";
-  clear: both;
-  height: 0;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -241,12 +232,419 @@ html {
   font-size: 125%;
 }
 
-.wrapper {
-  max-width: 1260px;
-  width: 90%;
-  margin: 0 auto;
+body {
+  font-family: "Barlow";
+  font-size: 1rem;
+  color: #ffff;
+}
+
+i {
+  font-size: 1.5rem;
+  color: #0F0F0F;
+  background-color: #FFD300;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+ul, li, a, p {
+  padding: 0;
+  margin: 0;
+}
+
+span, h1, h2, h3 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+p {
+  letter-spacing: 0.05rem;
+  font-weight: lighter;
 }
 
 h1 {
-  color: blue;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: lighter;
+}
+h2.second {
+  color: #FFD300;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+}
+
+nav {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+
+.wrapper {
+  max-width: 2400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  color: #171B0E;
+  background-color: #FFD300;
+  padding: 0px 10px;
+  border: 2px solid #FFD300;
+  font-size: 1.12rem;
+  line-height: 2.08rem;
+  text-align: center;
+  cursor: pointer;
+}
+button.findOut {
+  background-color: #0F0F0F;
+  color: #ffff;
+  border: 2px solid #0F0F0F;
+}
+
+body {
+  background-color: #2B331B;
+}
+
+header {
+  background-image: url("../the-restaurant-mall-assets/the-restaurant-mall-assets/home-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header nav ul li {
+  padding: 40px 15px;
+}
+header nav ul li:hover {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  -webkit-text-decoration-color: #FFD300;
+          text-decoration-color: #FFD300;
+  text-underline-position: under;
+  text-underline-offset: 4px;
+}
+header nav ul li:focus {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FFD300;
+          text-decoration-color: #FFD300;
+}
+header .contentContainer h1 {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+}
+header .contentContainer span {
+  display: block;
+  color: black;
+  padding: 10px;
+  background-color: #ffff;
+}
+header .headerImg {
+  width: 50vw;
+  height: 50vh;
+}
+header .headerImg .wrapper .imgContainer {
+  width: 50vw;
+}
+header .headerImg .wrapper .imgContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .headerImg {
+  width: 100%;
+  height: 30vh;
+}
+main .headerImg .caliDish {
+  width: 100%;
+}
+main .headerImg .caliDish .imgContainer {
+  width: 100%;
+  position: relative;
+}
+main .headerImg .caliDish .imgContainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  top: -500px;
+}
+main .contactUs {
+  padding-bottom: 120px;
+}
+main .contactUs .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main .contactUs .wrapper .contactOptions {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+main .contactUs .wrapper .contactOptions .contactIcons i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .contactUs .wrapper .contactOptions .txtContainer {
+  padding: 0 10px 10px 20px;
+}
+main .food {
+  background-color: #171B0E;
+  height: 100vh;
+  width: 100%;
+}
+main .food .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+main .food .wrapper .trySomething {
+  width: 42.5%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+main .food .wrapper .trySomething .imgContainer {
+  width: 100%;
+  display: absolute;
+  height: 50%;
+  position: relative;
+}
+main .food .wrapper .trySomething .imgContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: -40px;
+  -webkit-box-shadow: 25px 25px #FFD300;
+          box-shadow: 25px 25px #FFD300;
+}
+main .food .wrapper .trySomething .txtContainer {
+  text-align: right;
+  width: 90%;
+  position: relative;
+  height: 50%;
+  padding-top: 40px;
+}
+main .food .wrapper .trySomething .txtContainer h3 {
+  margin-bottom: 10px;
+}
+main .food .wrapper .trySomething .txtContainer button {
+  margin-top: 40px;
+}
+main .food .wrapper .bestBurgers {
+  width: 42.5%;
+}
+main .food .wrapper .bestBurgers .txtContainer {
+  width: 90%;
+  position: relative;
+  height: 50%;
+  padding-top: 40px;
+}
+main .food .wrapper .bestBurgers .txtContainer h3 {
+  margin-bottom: 10px;
+}
+main .food .wrapper .bestBurgers .txtContainer button {
+  margin-top: 40px;
+}
+main .food .wrapper .bestBurgers .imgContainer {
+  width: 100%;
+  display: absolute;
+  height: 50%;
+  position: relative;
+}
+main .food .wrapper .bestBurgers .imgContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 40px;
+  -webkit-box-shadow: -25px 25px #FFD300;
+          box-shadow: -25px 25px #FFD300;
+}
+main .giftCard {
+  height: 70vh;
+}
+main .giftCard .wrapper {
+  height: 100%;
+  width: 75%;
+}
+main .giftCard .wrapper .winGift {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .giftCard .wrapper .winGift h2 {
+  padding-bottom: 14px;
+}
+main .giftCard .wrapper .winGift button {
+  margin-top: 20px;
+}
+main .banner {
+  height: 70vh;
+  width: 100%;
+}
+main .banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .about {
+  width: 100%;
+  height: 90vh;
+}
+main .about .wrapper {
+  height: 100%;
+}
+main .about .wrapper .aboutNature {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .about .wrapper .aboutNature .imgContainer {
+  width: calc(30% - 40px);
+  padding-right: 40px;
+}
+main .about .wrapper .aboutNature .imgContainer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: -25px 25px #FFD300;
+          box-shadow: -25px 25px #FFD300;
+}
+main .about .wrapper .aboutNature .txtContainer {
+  width: calc(70% - 40px);
+  padding-left: 40px;
+}
+main .about .wrapper .aboutNature .txtContainer h2 {
+  padding-bottom: 10px;
+}
+main .about .wrapper .aboutNature .txtContainer button {
+  margin-top: 20px;
+}
+main .gallery {
+  background-color: #171B0E;
+  height: 90vh;
+}
+main .gallery .wrapper {
+  height: 100%;
+}
+main .gallery .wrapper .galleryPhotos {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .gallery .wrapper .galleryPhotos a {
+  width: 33%;
+}
+main .gallery .wrapper .galleryPhotos img {
+  width: 100%;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #0F0F0F;
 }

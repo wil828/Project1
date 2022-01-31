@@ -1,5 +1,35 @@
 .wrapper{
-    max-width: 1260px;
-    width: 90%;
+    max-width: 2400px;
+    width: 80%;
     margin: 0 auto;
 }
+
+button {
+    color: $secondary;
+    background-color: $primary;
+    padding: 0px 10px;
+    border: 2px solid $primary;
+    font-size: $buttonFontSize;
+    line-height: 2.08rem;
+    text-align: center;
+    cursor: pointer;
+    // transition: 0.3s;
+    // &:hover {
+    //     background-color: $primary;
+    //     color: $solidWhite;
+    // }
+    // &:focus {
+    //     background-color: $primary;
+    //     color: $solidWhite;
+    // }
+    &.findOut {
+        background-color: $solidBlack;
+        color: $solidWhite;
+        border: 2px solid $solidBlack;
+    }
+}
+
+body {
+    background-color: $tertiary;
+}
+
