@@ -9,15 +9,18 @@
     <title>Contact</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="contactSite">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
 
         <div class="headerContent wrapper">
             <div class="contentContainer">
@@ -31,58 +34,71 @@
             <div class="info">
                 <div class="socialWrapper">
                     <div class="socialIcons">
-                        <a href="">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Link to Instagram</span>
-                        </a>
-                  
+
                         <a href="">
                             <i class="fab fa-facebook-f" aria-hidden="true"></i>
                             <span class="sr-only">Link to facebook</span>
                         </a>
-                  
+
                         <a href="">
-                            <i class="fab fa-snapchat-ghost" aria-hidden="true"></i>
-                            <span class="sr-only">Link to Snapchat</span>
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Instagram</span>
                         </a>
-                  
+
                         <a href="">
                             <i class="fab fa-twitter" aria-hidden="true"></i>
                             <span class="sr-only">Link to twitter</span>
                         </a>
+                  
+                        <a href="">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <span class="sr-only">Link to whatsapp</span>
+                        </a>
                     </div>
     
                     <div class="socialTxt">
-                        <p>info@email.com</p>
-                        <pre>
+                        <p class="email">info@email.com</p>
+                        <p>
                             123 - 456- 7890
+                            <br>
                             123 Queen Street West, Unit 10
+                            <br>
                             Toronto, Ontario
+                            <br>
                             M5V2D5
-                        </pre>
+                        </p>
                     </div>
                 </div><!-- END .socialWrapper -->
 
-                <form action="https://formspree.io/f/xjvlggjg" method="POST" class="commentForm" name="commentForm">
-                    <div class="commentInputs">
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="text" id="name" placeholder="Name">
-    
-                        <label for="email" class="sr-only">Email address</label>
-                        <input type="email" id="name" placeholder="Email address">
-                    </div>
-    
-                    <label for="message" class="sr-only">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-    
-                    <button>Submit</button>
-    
-                </form>
+                <div class="contactForm">
+                    <form action="https://formspree.io/f/xjvlggjg" method="POST" class="commentForm" name="commentForm">
+                        <div class="commentInputs">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" id="name" placeholder="Name">
+        
+                            <label for="email" class="sr-only">Email address</label>
+                            <input type="email" id="name" placeholder="Email address">
+                        </div>
+        
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        
+                        <button>Submit</button>
+        
+                    </form>
+
+                </div>
             </div><!-- END .info -->
 
         </div><!-- END .wrapper -->
 
     </main><!-- END section .contact -->
+
+    <footer>
+        <div class="wrapper">
+            <p>Copyright 2019 Juno College</p>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -1,0 +1,38 @@
+.commentForm {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+
+    .commentInputs {
+        width: 100%;
+        display: flex; 
+        justify-content: space-between;
+
+    }
+
+}
+
+input, textarea {
+    color: $solidWhite;
+    background-color: transparent;
+    padding: 20px 15px;
+    font-family: $bodyFont;
+    border: none;
+
+    &::placeholder{
+        font-size: $baseFontSize;
+        color: $solidWhite;
+        opacity: 1;
+    }
+}
+
+input {
+    width: 47%;
+    margin-bottom: 30px;
+    border-bottom: 2px solid $primary;
+}
+
+textarea {
+    border: 2px solid $primary;
+    margin-bottom: 30px;
+}

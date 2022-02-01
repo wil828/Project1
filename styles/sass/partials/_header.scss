@@ -5,6 +5,16 @@ header {
     background-position: center;
     height: 100vh;
     width: 100%;
+
+    &.blog {
+        background-image: url("../the-restaurant-mall-assets/the-restaurant-mall-assets/blog-header.jpg");
+    }
+
+    &.contactSite {
+        background-image: url("../the-restaurant-mall-assets/the-restaurant-mall-assets/contact-header.jpg");
+    }
+
+
     nav {
         ul {
             display: flex;
@@ -44,19 +54,4 @@ header {
         }
     }
 
-    .headerImg {
-        width: 50vw;
-        height: 50vh;
-        .wrapper {
-
-            .imgContainer {
-                width: 50vw;
-
-
-                img {
-                    object-fit: cover;
-                }
-            }
-        }
-    }
 }
