@@ -1,0 +1,421 @@
+// 1200px screen size devices and smaller
+
+@media (max-width: 1200px) {
+    // HOMEPAGE SECTION
+
+    main {
+        .headerImg {
+            .caliDish {
+                .imgContainer {
+                    
+                    img {
+                        width: 45vw;
+                        top: -400px;
+                    }
+                }
+            }
+        }
+
+        .gallery {
+            height: 70vh;
+        }
+    }
+}
+
+// 1000px screen size devices and smaller
+@media (max-width: 1025px) {
+    // HOMEPAGE SECTION
+
+    main {
+        .headerImg {
+            display: none;
+            height: 30vh;
+        }
+        
+
+        .gallery {
+            height: 70vh;
+        }
+
+        .contactUs {
+            padding: 20px 0 120px 0;
+            
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                
+                .contactOptions {
+                    width: 100%;
+                    padding: 15px 0;
+                }
+        
+            }
+        }
+
+        .food {
+            background-color: $secondary;
+            height: auto;
+            
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    
+                .trySomething {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    
+                    .imgContainer {
+                        width: 50%;
+                        height: 50%;
+    
+                        img {
+                            top: -40px;
+                            box-shadow: 10px 10px $primary;
+                            position: relative;
+                        }
+                    }
+    
+                    .txtContainer {
+                        padding-top: 20px;
+                        text-align: center;
+    
+                    }
+                }
+    
+                .bestBurgers {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .txtContainer {
+                        padding-top: 20px;
+                        text-align: center;
+    
+                        h3 {
+                            margin-top: 80px;
+                            margin-bottom: 10px;
+                        }
+    
+                        button {
+                            margin-top: 40px;
+                            margin-bottom: 40px;
+                        }
+                    }
+    
+                    .imgContainer {
+                        width: 50%;
+                        height: 70%;
+    
+                        img {
+                            top: 40px;
+                            box-shadow: -10px 10px $primary;
+                            position: relative;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        .about {
+            width: 100%;
+            height: auto;
+            .wrapper {
+                height: 100%;
+    
+                .aboutNature {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+        
+                    .imgContainer {
+                        width: 50%;
+                        padding: 40px 0px 40px 0;
+
+                        img {
+                            object-fit: cover;
+                            box-shadow: -10px 10px $primary;
+                            
+                        }
+                        
+                    }
+    
+                    .txtContainer {
+                        width: 100%;
+                        padding-left: 0px;
+                        text-align: center;
+    
+                        button {
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    // CONTACT section
+    .contact {
+        .wrapper {
+            width: 90%;
+        }
+    }
+}
+
+// 1000px screen size devices and smaller
+@media (max-width: 768px) {
+    // BASE STYLES
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    // FORM CHANGE
+
+    .commentForm {
+    
+        .commentInputs { 
+            flex-direction: column;
+        }
+    }
+
+    input {
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    textarea {
+        margin-top: 10px;
+    }
+
+
+    // NAV SECTION
+    nav {
+        background-color: rgba(25, 48, 12, 0.5);
+        width: 100%;
+        ul {
+            justify-content: space-evenly;
+        }
+    }
+
+    .headerContent {
+
+        height: calc(100% - 103px);
+        width: 100%;
+        .contentContainer {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+    }
+
+
+    // HOMEPAGE SECTION
+
+    main {
+        .giftCard {
+            height: auto;
+            .wrapper {
+                width: 90%;
+                .winGift {
+                    h2 {
+                        text-align: center;
+                        padding: 20px 0 14px 0;
+                    }
+                    button {
+                        margin: 20px 0;
+                    }
+                }
+            }
+        }
+
+        .gallery {
+            height: auto;
+            .wrapper {
+                .galleryPhotos {
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+
+                    a {
+                        width: 75%;
+                    }
+        
+                    img {
+                        padding: 20px;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+
+    // BLOG SECTION
+    .blogContent {
+        flex-direction: column;
+    
+        .featuredRestaurants {
+            width: 100%;
+    
+            .wrapper {
+                margin-top: 100px;
+                
+                .imgContainer {
+                    right: 5%;
+                }
+    
+                .txtContainer {
+                    width: 80%;
+                    margin: 0 auto;
+                    .featuredTxt {
+                        padding-top: 30px;
+                        h4 {
+                            padding-bottom: 10px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    
+        .employmentOpportunities {
+            width: 90%;
+            margin-top: 175px;
+    
+            .mainBlog {
+    
+                .imgContainer {
+                    
+                    img {
+                        width: calc(100% - 10px);
+                        box-shadow: -15px 15px $primary;
+                    }
+                }
+    
+                .txtContainer {
+                    position: relative;
+    
+                    .txtBox {
+                        padding: 0px 0 50px 0;
+                    }
+    
+                }
+            }
+                
+            .comments { 
+                .wrapper{
+                    width: 90%;
+                    .commentArea{
+                        h3 {
+                            text-align: center;
+                        }
+                        .commentSection {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-bottom: 90px;
+                            .imgContainer {
+                                width: 35%;
+                                margin-right: 0;
+                                height: 50%;
+                            }
+    
+                            .txtContainer {
+                                width: 100%;
+                                h5 {
+                                    padding: 10px 0;
+                                }
+    
+                            }
+                                
+                        }
+    
+                    }
+                }
+    
+            } // .comments END
+        } // .employmentOpportunities END
+    }// .blogContent END
+
+    // CONTACT PAGE SECTION
+
+    .contact {
+        .info {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+    
+            .socialWrapper {
+                width: auto;
+                padding-right: 0px;
+                .socialIcons {
+                    padding: 50px 0 20px 0;
+                    justify-content: center;
+                    i {
+                        padding: 0 15px;
+                    }
+                        
+                }
+                .socialTxt {
+                    padding-bottom: 40px;
+                    .email {
+                        padding-bottom: 20px;
+                    }
+    
+                }
+            }
+    
+            .contactForm {
+                width: 100%;
+                margin-bottom: 40px;
+    
+                form {
+                    top: 0px;
+                    box-shadow: 15px 15px $primary;
+                }
+            }
+        }
+    }
+}
+
+// 480px screen size devices and smaller
+@media (max-width: 480px) {
+    // BASE STYLES
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+}

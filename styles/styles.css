@@ -489,7 +489,6 @@ main .food .wrapper .trySomething {
 }
 main .food .wrapper .trySomething .imgContainer {
   width: 100%;
-  display: absolute;
   height: 50%;
   position: relative;
 }
@@ -908,4 +907,385 @@ input {
 textarea {
   border: 2px solid #FFD300;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  main .headerImg .caliDish .imgContainer img {
+    width: 45vw;
+    top: -400px;
+  }
+  main .gallery {
+    height: 70vh;
+  }
+}
+@media (max-width: 1025px) {
+  main .headerImg {
+    display: none;
+    height: 30vh;
+  }
+  main .gallery {
+    height: 70vh;
+  }
+  main .contactUs {
+    padding: 20px 0 120px 0;
+  }
+  main .contactUs .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .contactUs .wrapper .contactOptions {
+    width: 100%;
+    padding: 15px 0;
+  }
+  main .food {
+    background-color: #171B0E;
+    height: auto;
+  }
+  main .food .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  main .food .wrapper .trySomething {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .food .wrapper .trySomething .imgContainer {
+    width: 50%;
+    height: 50%;
+  }
+  main .food .wrapper .trySomething .imgContainer img {
+    top: -40px;
+    -webkit-box-shadow: 10px 10px #FFD300;
+            box-shadow: 10px 10px #FFD300;
+    position: relative;
+  }
+  main .food .wrapper .trySomething .txtContainer {
+    padding-top: 20px;
+    text-align: center;
+  }
+  main .food .wrapper .bestBurgers {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .food .wrapper .bestBurgers .txtContainer {
+    padding-top: 20px;
+    text-align: center;
+  }
+  main .food .wrapper .bestBurgers .txtContainer h3 {
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
+  main .food .wrapper .bestBurgers .txtContainer button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  main .food .wrapper .bestBurgers .imgContainer {
+    width: 50%;
+    height: 70%;
+  }
+  main .food .wrapper .bestBurgers .imgContainer img {
+    top: 40px;
+    -webkit-box-shadow: -10px 10px #FFD300;
+            box-shadow: -10px 10px #FFD300;
+    position: relative;
+  }
+  main .about {
+    width: 100%;
+    height: auto;
+  }
+  main .about .wrapper {
+    height: 100%;
+  }
+  main .about .wrapper .aboutNature {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .about .wrapper .aboutNature .imgContainer {
+    width: 50%;
+    padding: 40px 0px 40px 0;
+  }
+  main .about .wrapper .aboutNature .imgContainer img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: -10px 10px #FFD300;
+            box-shadow: -10px 10px #FFD300;
+  }
+  main .about .wrapper .aboutNature .txtContainer {
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+  }
+  main .about .wrapper .aboutNature .txtContainer button {
+    margin-bottom: 40px;
+  }
+
+  .contact .wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  .commentForm .commentInputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  input {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  textarea {
+    margin-top: 10px;
+  }
+
+  nav {
+    background-color: rgba(25, 48, 12, 0.5);
+    width: 100%;
+  }
+  nav ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .headerContent {
+    height: calc(100% - 103px);
+    width: 100%;
+  }
+  .headerContent .contentContainer {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+  }
+
+  main .giftCard {
+    height: auto;
+  }
+  main .giftCard .wrapper {
+    width: 90%;
+  }
+  main .giftCard .wrapper .winGift h2 {
+    text-align: center;
+    padding: 20px 0 14px 0;
+  }
+  main .giftCard .wrapper .winGift button {
+    margin: 20px 0;
+  }
+  main .gallery {
+    height: auto;
+  }
+  main .gallery .wrapper .galleryPhotos {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .gallery .wrapper .galleryPhotos a {
+    width: 75%;
+  }
+  main .gallery .wrapper .galleryPhotos img {
+    padding: 20px;
+  }
+
+  .blogContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogContent .featuredRestaurants {
+    width: 100%;
+  }
+  .blogContent .featuredRestaurants .wrapper {
+    margin-top: 100px;
+  }
+  .blogContent .featuredRestaurants .wrapper .imgContainer {
+    right: 5%;
+  }
+  .blogContent .featuredRestaurants .wrapper .txtContainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .blogContent .featuredRestaurants .wrapper .txtContainer .featuredTxt {
+    padding-top: 30px;
+  }
+  .blogContent .featuredRestaurants .wrapper .txtContainer .featuredTxt h4 {
+    padding-bottom: 10px;
+  }
+  .blogContent .employmentOpportunities {
+    width: 90%;
+    margin-top: 175px;
+  }
+  .blogContent .employmentOpportunities .mainBlog .imgContainer img {
+    width: calc(100% - 10px);
+    -webkit-box-shadow: -15px 15px #FFD300;
+            box-shadow: -15px 15px #FFD300;
+  }
+  .blogContent .employmentOpportunities .mainBlog .txtContainer {
+    position: relative;
+  }
+  .blogContent .employmentOpportunities .mainBlog .txtContainer .txtBox {
+    padding: 0px 0 50px 0;
+  }
+  .blogContent .employmentOpportunities .comments .wrapper {
+    width: 90%;
+  }
+  .blogContent .employmentOpportunities .comments .wrapper .commentArea h3 {
+    text-align: center;
+  }
+  .blogContent .employmentOpportunities .comments .wrapper .commentArea .commentSection {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 90px;
+  }
+  .blogContent .employmentOpportunities .comments .wrapper .commentArea .commentSection .imgContainer {
+    width: 35%;
+    margin-right: 0;
+    height: 50%;
+  }
+  .blogContent .employmentOpportunities .comments .wrapper .commentArea .commentSection .txtContainer {
+    width: 100%;
+  }
+  .blogContent .employmentOpportunities .comments .wrapper .commentArea .commentSection .txtContainer h5 {
+    padding: 10px 0;
+  }
+
+  .contact .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contact .info .socialWrapper {
+    width: auto;
+    padding-right: 0px;
+  }
+  .contact .info .socialWrapper .socialIcons {
+    padding: 50px 0 20px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .info .socialWrapper .socialIcons i {
+    padding: 0 15px;
+  }
+  .contact .info .socialWrapper .socialTxt {
+    padding-bottom: 40px;
+  }
+  .contact .info .socialWrapper .socialTxt .email {
+    padding-bottom: 20px;
+  }
+  .contact .info .contactForm {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .contact .info .contactForm form {
+    top: 0px;
+    -webkit-box-shadow: 15px 15px #FFD300;
+            box-shadow: 15px 15px #FFD300;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
 }
