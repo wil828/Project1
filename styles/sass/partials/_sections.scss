@@ -231,13 +231,22 @@ main {
                 align-items: center;
                 justify-content: center;
                 a {
-                    width: 33%;
+                    width: calc(33% - 50px);
                 }
-    
+
+                i {
+                    background-color: transparent;
+                    color: $primary;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
                 img {
                     width: 100%;
                     padding: 10px;
                 }
+
                 
             }
         }

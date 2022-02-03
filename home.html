@@ -10,6 +10,7 @@
 
 </head>
 <body>
+
     <header>
         
         <nav>
@@ -160,6 +161,7 @@
         <section class="gallery" id=gallery>
             <div class="wrapper">
                 <div class="galleryPhotos">
+                    <i class="fas fa-arrow-circle-left"></i>
                     <a href="https://www.instagram.com/" class="item">
                         <img src="./the-restaurant-mall-assets/the-restaurant-mall-assets/gallery-image-1.jpg" alt="string lights">
                     </a>
@@ -169,6 +171,8 @@
                     <a href="https://www.instagram.com/" class="item">
                         <img src="./the-restaurant-mall-assets/the-restaurant-mall-assets/gallery-image-1.jpg" alt="Korean Dishes">
                     </a>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                    
                 </div>
             </div><!-- END .wrapper -->
         </section><!-- END section .gallery -->
@@ -179,5 +183,20 @@
             </div>
         </footer>
     </main>
+
+    <script>
+        // remove the two instagram photos
+        const formElement = document.querySelector('img');
+        // if icon is clicked on the left, bring in new photo.  If not. move it back.
+        const newHeading = document.createElement('h2');
+        
+        
+        newHeading.textContent = "Wow, JS is really powerful";
+
+        const mainElement = document.querySelector(".galleryPhotos");
+        console.log(mainElement);
+        mainElement.appendChild(newHeading);
+        console.log(newHeading);
+    </script>
 </body>
 </html>
