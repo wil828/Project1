@@ -161,7 +161,7 @@
         <section class="gallery" id=gallery>
             <div class="wrapper">
                 <div class="galleryPhotos">
-                    <i class="fas fa-arrow-circle-left"></i>
+                    <i class="fas fa-arrow-alt-circle-left" id ="leftArrow"></i>
                     <a href="https://www.instagram.com/" class="item">
                         <img src="./the-restaurant-mall-assets/the-restaurant-mall-assets/gallery-image-1.jpg" alt="string lights">
                     </a>
@@ -169,9 +169,9 @@
                         <img src="./the-restaurant-mall-assets/the-restaurant-mall-assets/gallery-image-2.jpg" alt="Take away sign">
                     </a>
                     <a href="https://www.instagram.com/" class="item">
-                        <img src="./the-restaurant-mall-assets/the-restaurant-mall-assets/gallery-image-1.jpg" alt="Korean Dishes">
+                        <img src="./the-restaurant-mall-assets/the-restaurant-mall-assets/gallery-image-3.jpg" alt="Korean Dishes">
                     </a>
-                    <i class="fas fa-arrow-alt-circle-right"></i>
+                    <i class="fas fa-arrow-alt-circle-right" id="rightArrow"></i>
                     
                 </div>
             </div><!-- END .wrapper -->
@@ -184,19 +184,9 @@
         </footer>
     </main>
 
-    <script>
-        // remove the two instagram photos
-        const formElement = document.querySelector('img');
-        // if icon is clicked on the left, bring in new photo.  If not. move it back.
-        const newHeading = document.createElement('h2');
-        
-        
-        newHeading.textContent = "Wow, JS is really powerful";
+    <script src="script.js">
 
-        const mainElement = document.querySelector(".galleryPhotos");
-        console.log(mainElement);
-        mainElement.appendChild(newHeading);
-        console.log(newHeading);
+        
     </script>
 </body>
 </html>

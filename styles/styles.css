@@ -667,6 +667,11 @@ main .gallery .wrapper .galleryPhotos i {
       -ms-flex-align: center;
           align-items: center;
 }
+main .gallery .wrapper .galleryPhotos i:hover {
+  color: #ffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 main .gallery .wrapper .galleryPhotos img {
   width: 100%;
   padding: 10px;
@@ -1166,10 +1171,10 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   main .gallery .wrapper .galleryPhotos a {
     width: 75%;

@@ -240,6 +240,10 @@ main {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    &:hover {
+                        color: $solidWhite;
+                        transition: 0.3s;
+                    }
                 }
 
                 img {
